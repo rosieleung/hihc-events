@@ -28,6 +28,7 @@ function hihc_events_init_plugin() {
 		return;
 	}
 	date_default_timezone_set( get_option( 'timezone_string' ) );
+	include_once( HIHC_EVENTS_PATH . '/fields/hihc-events.php' );
 	include_once( HIHC_EVENTS_PATH . '/includes/enqueue.php' );
 	include_once( HIHC_EVENTS_PATH . '/includes/hihc-events.php' );
 	include_once( HIHC_EVENTS_PATH . '/includes/shortcodes.php' );

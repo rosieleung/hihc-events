@@ -1,0 +1,171 @@
+[
+    {
+        "key": "group_5c365ed296268",
+        "title": "Events - Help is Here Coaching",
+        "fields": [
+            {
+                "key": "field_5c37ace1c2ace",
+                "label": "Event Image",
+                "name": "thumbnail",
+                "type": "image",
+                "instructions": "A small thumbnail image to accompany the event description.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5c365fb59d798",
+                "label": "Recurring Event?",
+                "name": "recurring_event",
+                "type": "true_false",
+                "instructions": "If this event is a multi-day series, check this box.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Check to mark this event as recurring",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5c365f049d795",
+                "label": "(Start) Date",
+                "name": "date",
+                "type": "date_picker",
+                "instructions": "The date that this event takes place, or the date that the event series begins. (Leave blank to display date as \"TBA\".)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "F j, Y",
+                "return_format": "Ymd",
+                "first_day": 0
+            },
+            {
+                "key": "field_5c3661599d79a",
+                "label": "End Date",
+                "name": "end_date",
+                "type": "date_picker",
+                "instructions": "The last day of the event series. After this date, the event will be displayed in the past event archive.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5c365fb59d798",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "F j, Y",
+                "return_format": "Ymd",
+                "first_day": 0
+            },
+            {
+                "key": "field_5c367d14b965c",
+                "label": "Registration",
+                "name": "registration",
+                "type": "group",
+                "instructions": "If this event requires registration, fill out the forms below.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5c367d4cb965d",
+                        "label": "Price",
+                        "name": "price",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "$",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5c367dddb9660",
+                        "label": "Form type",
+                        "name": "form_type",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "none": "(no registration form)",
+                            "adult": "<strong>Adult:<\/strong> requests name, email, address, and phone",
+                            "child": "<strong>Child:<\/strong> additionally requests child's name, age, grade, and their biggest challenge"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "none",
+                        "layout": "vertical",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "hihc-event"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
