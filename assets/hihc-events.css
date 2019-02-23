@@ -1,0 +1,234 @@
+.event {
+    margin: 30px 0;
+    background: #8a008b;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.event .gform_wrapper .gfield_required, .event .gform_wrapper span.ginput_product_price {
+    color: inherit;
+}
+
+.event .gform_wrapper {
+    color: #fff;
+}
+
+.event .gform_wrapper form label.gfield_label, .event .gform_wrapper form .top_label .gfield_label {
+    color: inherit;
+    line-height: normal;
+    font-size: 14px;
+}
+
+.event .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+    font-size: 12px;
+    color: inherit;
+    opacity: .7;
+    line-height: normal;
+    text-transform: none;
+    margin: 2px 0 12px;
+}
+
+.event .gform_wrapper form input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .event .gform_wrapper form textarea {
+    padding: 8px 8px 5px;
+    line-height: normal;
+    color: #334139;
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+div.event .gform_wrapper form .gform_footer input.button:not(.gform_image_button) {
+    padding: 10px 50px 6px;
+    background: #5cc44e;
+}
+
+.event .gform_wrapper form .gform_footer input.button:not(.gform_image_button):hover {
+    background: #fff101;
+    color: inherit;
+}
+
+@media (max-width: 400px) {
+    .event {
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .event .gform_wrapper {
+        padding: 0;
+        background: none;
+    }
+}
+
+.archive-hihc-event {
+    margin: 10px 0 30px 140px;
+    background: #fff;
+    padding: 0 20px 25px;
+}
+
+.archive-hihc-event a {
+    color: #5cc44e;
+}
+
+.archive-hihc-event a:hover {
+    color: #8a008b;
+}
+
+.archive-hihc-event h3 {
+    margin: 0 -20px 20px;
+    padding: 15px 20px;
+    background: #5cc44e;
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+}
+
+.archive-hihc-event h3 a {
+    color: #fff;
+}
+
+.archive-hihc-event h3 a:hover {
+    color: #fff101;
+}
+
+.hihc-event-content-wrapper {
+    display: flex;
+    font-size: 19px;
+}
+
+.hihc-event-img {
+    flex: 0 0 170px;
+    padding-right: 20px;
+}
+
+div.hihc-event-readmore-button a {
+    display: inline-block;
+    background: #9624af;
+    color: #fff;
+    padding: 7px 20px 4px;
+}
+
+div.hihc-event-readmore-button a:hover {
+    color: #fff;
+    background: #c18ed7;
+}
+
+.archive-hihc-event .hihc-event-datebox {
+    float: left;
+    margin: 0 0 0 -160px;
+}
+
+.hihc-event-datebox {
+    width: 120px;
+    color: #fff;
+    text-align: center;
+}
+
+.hihc-event-datebox .datebox-flag {
+    background: #fece05;
+    color: #8a008b;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.hihc-event-datebox .month {
+    background: #9624af;
+    font-size: 16px;
+    padding: 4px 0 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hihc-event-datebox .day {
+    background: #c18ed7;
+    font-size: 48px;
+    padding: 25px 0 20px;
+    letter-spacing: 2px;
+}
+
+.hihc-event-datebox.event-ended .month {
+    background: #555;
+}
+
+.hihc-event-datebox.event-ended .day {
+    background: #fff;
+    color: #555;
+}
+
+.hihc-event-datebox.event-tba .day {
+    background: #9624af;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+@media ( max-width: 768px ) {
+    .hihc-event-datebox {
+        display: none;
+    }
+
+    .archive-hihc-event {
+        margin: 10px 0 40px;
+    }
+}
+
+@media ( max-width: 600px ) {
+    .hihc-event-content-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hihc-event-img {
+        flex: 0 1 auto;
+        padding: 20px 0 0;
+        text-align: center;
+    }
+}
+
+/* single hihc event pages */
+.hihc-breadcrumbs {
+    font-size: 13px;
+}
+
+.hihc-breadcrumbs a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.hihc-breadcrumbs a:hover {
+    text-decoration: none;
+}
+
+.hihc-breadcrumbs + .post.post-details {
+    padding-top: 0;
+}
+
+.single-hihc-event .post.post-details .entry-header .entry-title {
+    margin: 0 0 10px 0;
+}
+
+.single-hihc-event .post.post-details .entry-header, .single-hihc-event .post.post-details .entry-content {
+    border: 0;
+    padding: 0;
+}
+
+@media (min-width: 1200px) {
+    .single-hihc-event.fw-section-space-md .fw-main-row .fw-container {
+        padding-top: 50px;
+    }
+}
+
+@media print {
+    .archive-hihc-event , .archive-hihc-event .hihc-event-datebox {
+        border: 1px solid #000;
+    }
+
+    .archive-hihc-event h3, .archive-hihc-event .hihc-event-datebox .month {
+        border-bottom: 1px solid #bbb;
+    }
+
+    .hihc-breadcrumbs {
+        display: none;
+    }
+    .single-hihc-event.fw-section-space-md .fw-main-row .fw-container {
+        padding-top: 100px;
+    }
+}
